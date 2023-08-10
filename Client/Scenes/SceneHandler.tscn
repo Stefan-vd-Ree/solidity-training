@@ -1,0 +1,35 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Scenes/SceneHandler.gd" type="Script" id=1]
+
+[node name="SceneHandler" type="Node"]
+script = ExtResource( 1 )
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="Main" type="VBoxContainer" parent="UI"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_constants/separation = 45
+alignment = 1
+
+[node name="InputAmount" type="LineEdit" parent="UI/Main"]
+margin_left = 387.0
+margin_top = 227.0
+margin_right = 637.0
+margin_bottom = 287.0
+rect_min_size = Vector2( 250, 60 )
+size_flags_horizontal = 4
+align = 1
+placeholder_text = "Amount to donate"
+
+[node name="ButtonDonate" type="Button" parent="UI/Main"]
+margin_left = 432.0
+margin_top = 332.0
+margin_right = 592.0
+margin_bottom = 372.0
+rect_min_size = Vector2( 160, 40 )
+size_flags_horizontal = 4
+text = "Donate!"
+
+[connection signal="pressed" from="UI/Main/ButtonDonate" to="." method="_on_ButtonDonate_pressed"]
