@@ -8,6 +8,16 @@
 
 config_version=4
 
+_global_script_classes=[ {
+"base": "Node",
+"class": "JavaScriptConvert",
+"language": "GDScript",
+"path": "res://addons/metamask/convert_util.gd"
+} ]
+_global_script_class_icons={
+"JavaScriptConvert": ""
+}
+
 [application]
 
 config/name="Training_BuyCoffee-webapp"

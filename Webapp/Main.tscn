@@ -12,21 +12,31 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 alignment = 1
 
-[node name="Donate" type="Button" parent="UI/Main"]
+[node name="Confirm" type="Button" parent="UI/Main"]
 margin_left = 432.0
-margin_top = 198.0
+margin_top = 171.0
 margin_right = 592.0
-margin_bottom = 248.0
+margin_bottom = 221.0
 rect_min_size = Vector2( 160, 50 )
 size_flags_horizontal = 4
-text = "Donate!"
+text = "Confirm"
+
+[node name="Verify" type="Button" parent="UI/Main"]
+margin_left = 432.0
+margin_top = 225.0
+margin_right = 592.0
+margin_bottom = 275.0
+rect_min_size = Vector2( 160, 50 )
+size_flags_horizontal = 4
+text = "Verify"
 
 [node name="TestOutput" type="Label" parent="UI/Main"]
-margin_top = 252.0
+margin_top = 279.0
 margin_right = 1024.0
-margin_bottom = 402.0
+margin_bottom = 429.0
 rect_min_size = Vector2( 0, 150 )
 size_flags_vertical = 1
 autowrap = true
 
-[connection signal="pressed" from="UI/Main/Donate" to="." method="_on_Donate_pressed"]
+[connection signal="pressed" from="UI/Main/Confirm" to="." method="_on_Confirm_pressed"]
+[connection signal="pressed" from="UI/Main/Verify" to="." method="_on_Verify_pressed"]
