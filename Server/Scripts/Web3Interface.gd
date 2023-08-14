@@ -54,7 +54,7 @@ func _on_data(id):
 #			retrieve_tx_prop(instruction[1], id)
 #	print("Got data from client %d: %s ... echoing" % [id, pkt.get_string_from_utf8()])
 
-func _process(delta):
+func _process(_delta):
 	# Call this in _process or _physics_process.
 	# Data transfer, and signals emission will only happen when calling this function.
 	_server.poll()

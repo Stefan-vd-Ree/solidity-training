@@ -19,6 +19,7 @@ config/icon="res://icon.png"
 MainInterface="*res://Scripts/MainInterface.gd"
 TempStorage="*res://Scripts/TempStorage.gd"
 Web3Interface="*res://Scripts/Web3Interface.gd"
+Javascript="*res://Scripts/JavaScript/Javascript.gd"
 
 [gui]
 

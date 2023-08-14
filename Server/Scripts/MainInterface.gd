@@ -16,7 +16,7 @@ func _ready():
 	add_child(donation_node, true)
 	
 	
-func _process(delta):
+func _process(_delta):
 	if not custom_multiplayer.has_network_peer():
 		return;
 	custom_multiplayer.poll();
